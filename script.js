@@ -1,14 +1,12 @@
-// JavaScript - Functions
+// JavaScript - Data Structures: Objects and Arrays
+const car = {
+  color: "Blue",
+  brand: "Baleno",
+  speed: 200,
+  drive: function () {
+    return "Dive";
+  },
+};
 
-// makeCoffee
-function makeCoffee(sugar, milk) {
-  let instructions = "Boil Water";
-  instructions += " pour into the cup,";
-  instructions += " add coffee granules";
-  instructions += " add " + sugar + " spoons of sugar";
-  instructions += " milk " + milk + "% milk";
-  return instructions;
-}
-makeCoffee();
-
-console.log(makeCoffee(2, 22));
+const shoppingList = ["Apple", "Orange", "Pear"];
+console.log(shoppingList);
