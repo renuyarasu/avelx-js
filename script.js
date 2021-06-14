@@ -1,12 +1,31 @@
-// JavaScript - Data Structures: Objects and Arrays
+// JavaScript - Embeding Objects And Arrays
 const car = {
-  color: "Blue",
-  brand: "Baleno",
-  speed: 200,
+  make: "Volvo",
+  speed: 160,
+  engine: {
+    size: 2.0,
+    make: "BMW",
+    fuel: "Petrol",
+    pistons: [
+      {
+        maker: "BMW",
+        maker: "Baleno",
+      },
+    ],
+  },
   drive: function () {
-    return "Dive";
+    return "Drive";
   },
 };
 
-const shoppingList = ["Apple", "Orange", "Pear"];
-console.log(shoppingList);
+const array = [
+  "string",
+  100,
+  ["embed", 200],
+  { car: "Ford" },
+  function () {
+    return "Drive";
+  },
+];
+
+console.log(car);
