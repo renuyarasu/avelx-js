@@ -1,14 +1,14 @@
-// JavaScript - Operators - BODMAS Rule
-// BODMAS: Brackets, Orders, Division/Multiplication, Addition/Subtraction.
+// JavaScript - Functions
 
-// const value = 5 + 2 * 3;
-// const value = Math.pow(2,4);
-let num = 2;
-// num += 30;
-// num -= 30;
-// num *= 2;
-// num /= 2;
-// num %= 4;
-num **= 4;
+// makeCoffee
+function makeCoffee(sugar, milk) {
+  let instructions = "Boil Water";
+  instructions += " pour into the cup,";
+  instructions += " add coffee granules";
+  instructions += " add " + sugar + " spoons of sugar";
+  instructions += " milk " + milk + "% milk";
+  return instructions;
+}
+makeCoffee();
 
-console.log(num);
+console.log(makeCoffee(2, 22));
