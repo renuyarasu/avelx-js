@@ -1,7 +1,7 @@
 // JavaScript - Embeding Objects And Arrays 
 console.clear();
 
-// computed member access operator
+// // member (propery) creation, assigment and deletion
 
 const car = {
   make: "Volvo",
@@ -15,20 +15,24 @@ const car = {
       { maker: "Baleno" },
     ],
   },
-  drive: function () {
-    return "Drive";
-  },
 };
 
+// car.make = 'Ford '
+// car.make += 200;
 
-// console.log(car.engine.pistons[0].maker); // BMW
-// console.log(car['make']); // Volvo
-// console.log(car['engine'] ['make']); // BMW
-// console.log(car['engine'] ['pistons'][1]['maker']); //Baleno 
+// car.drive = 'drive'
+/* car.model = 'V60';
+console.log(car);
+ */
 
-//Variablies
-// let pointer = 'make';
-// console.log(car[pointer]); // Volvo
+// Add function
 
-let pointer = 'speed';
-console.log(car[pointer]); //160
+/* car.stop = function () { return 'stop' }
+console.log(car.stop()); */
+
+// delete
+
+car.color = 'red'; // Added color
+delete car.color // delete color
+
+console.log(car);
