@@ -11,9 +11,9 @@ var arr = [
   }
 ]
 
+// Array.prototype.push()
+// The push() method adds one or more elements to the end of an array and returns the new length of the array.
 
-// Array.prototype.unshift()
-// The unshift() method adds one or more elements to the beginning of an array and returns the new length of the array.
-arr.unshift('string', 20, 20.02, function () { }, {}, [])
+arr.push('string', 20, 20.02, function () { }, {}, [])
 console.log(arr);
 console.log(arr.length);
