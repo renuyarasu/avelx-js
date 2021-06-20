@@ -1,7 +1,7 @@
 // JavaScript - Embeding Objects And Arrays 
 console.clear();
 
-// Arrays Modifications
+// Array Methods
 var arr = [
   'string',
   ['embed', 200],
@@ -11,8 +11,9 @@ var arr = [
   }
 ]
 
-// Array Methods
-console.log(arr.shift()); //remove first element
-console.log(arr.pop()); //remove last element
 
+// Array.prototype.unshift()
+// The unshift() method adds one or more elements to the beginning of an array and returns the new length of the array.
+arr.unshift('string', 20, 20.02, function () { }, {}, [])
 console.log(arr);
+console.log(arr.length);
