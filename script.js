@@ -11,7 +11,8 @@ var arr = [
   }
 ]
 
-// Assignment in Arrays
-arr[0] = 'New string';
-arr[5] += ' concat' 
-console.log(arr.length);
+// Array Methods
+console.log(arr.shift()); //remove first element
+console.log(arr.pop()); //remove last element
+
+console.log(arr);
