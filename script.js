@@ -13,5 +13,5 @@ var arr = [
 
 // Assignment in Arrays
 arr[0] = 'New string';
-arr[0] += ' concat' 
-console.log(arr);
+arr[5] += ' concat' 
+console.log(arr.length);
