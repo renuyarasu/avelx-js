@@ -1,12 +1,17 @@
-// JavaScript: Scope & Closures
+// JavaScript | Gobal Scope & Inferred Globals
 console.clear();
-function runExpression() {
-    var a = 10;
-    function add(b) {
-        return a + b;
+let engine = {
+    maker: 'Ford',
+    headGasket: {
+        maker: 'Golf',
+        pots: ['Piston_01', 'Piston_02']
     }
-    console.log(
-        add(90), add(20)
-    );
+};
+function runExpression(){
+    let a = 10;
+    function add(){
+        console.log(engine);
+    }
+    add();
 }
 runExpression();
