@@ -1,17 +1,23 @@
-// JavaScript | Gobal Scope & Inferred Globals
+// JavaScript | 'this' keyword
 console.clear();
-let engine = {
-    maker: 'Ford',
-    headGasket: {
-        maker: 'Golf',
-        pots: ['Piston_01', 'Piston_02']
+
+var object = {
+    prop: this,
+    embed: {
+        method: function () {
+            return this;
+        },
     }
 };
-function runExpression(){
-    let a = 10;
-    function add(){
-        console.log(engine);
+var array = [
+    this,
+    function () {
+        return this;
     }
-    add();
-}
-runExpression();
+];
+function global() {
+    return this;
+};
+global.call(object);
+
+console.log(object.embed.method());
