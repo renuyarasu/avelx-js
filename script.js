@@ -1,14 +1,12 @@
-// JavaScript - Functions as first class citizens
+// JavaScript: Scope & Closures
 console.clear();
-
-// JavaScript: Scope and Closures
-let engine = {
-  maker: 'Ford',
-  headGasket: {
-    pots: [
-      'Piston_01',
-      'Piston_02',
-    ]
-  }
+function runExpression() {
+    var a = 10;
+    function add(b) {
+        return a + b;
+    }
+    console.log(
+        add(90), add(20)
+    );
 }
-console.log(engine.headGasket.pots[0]);
+runExpression();
