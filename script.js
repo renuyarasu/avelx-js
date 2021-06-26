@@ -1,23 +1,16 @@
-// JavaScript | 'this' keyword
-console.clear();
+// JavaScript | this keyword | 3.31.31
+console.log(this);
 
-var object = {
+let object = {
     prop: this,
-    embed: {
-        method: function () {
-            return this;
-        },
-    }
-};
-var array = [
+    method: function () { return this; }
+}
+
+let array = [
     this,
-    function () {
-        return this;
-    }
-];
+    function () { return this }
+]
 function global() {
     return this;
-};
-global.call(object);
-
-console.log(object.embed.method());
+}
+global.call(object)
