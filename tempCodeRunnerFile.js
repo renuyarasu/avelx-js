@@ -1,1 +1,3 @@
-greenMan === 'yes'
+else {
+    console.log('No!!!');
+}

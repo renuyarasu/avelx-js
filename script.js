@@ -5,6 +5,8 @@ console.clear();
 let carsleft = 0;
 let carsright = 0;
 let greenMan = 'yes';
-if (greenMan === 'yes') {
+if (greenMan === 'no') {
     console.log('Cross The Road!');
-} 
+} else {
+    console.log('No!!!');
+}
