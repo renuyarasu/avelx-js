@@ -1,3 +1,1 @@
-else {
-    console.log('No!!!');
-}
+0

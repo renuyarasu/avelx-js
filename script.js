@@ -1,17 +1,15 @@
 // JavaScript | this keyword | 3.31.31
 console.clear();
 
-// If Statements
-let carsleft = 1;
-let carsright = 0;
-let greenMan = 'yes';
+// For and for in loop
 
-if (greenMan === 'yes') {
-    console.log('Cross The Road!');
+let class_register = ['VedaGna', 'Hindu', 'Renu'];
+
+for (let i = 0; i < class_register.length; i++) {
+    console.log(class_register[i]);
 }
-else if (greenMan === 'yes' && carsleft === 0 && carsright === 0) {
-    console.log('All clear, Cross the road!');
-}
-else {
-    console.log('Stay there!');
-}
+
+/* console.log(class_register[0]); //VedaGna
+console.log(class_register[1]); //Hindu
+console.log(class_register[2]);// Renu
+ */
