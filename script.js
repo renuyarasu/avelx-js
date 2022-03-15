@@ -5,10 +5,13 @@ console.clear();
 
 let class_register = ['VedaGna', 'Hindu', 'Renu'];
 
-for (let i = 0; i < class_register.length; i++) {
+for (let index in class_register) {
+    console.log(class_register[index]);
+}
+/* for (let i = 0; i < class_register.length; i++) {
     console.log(class_register[i]);
 }
-
+ */
 /* console.log(class_register[0]); //VedaGna
 console.log(class_register[1]); //Hindu
 console.log(class_register[2]);// Renu
