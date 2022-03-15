@@ -1,22 +1,19 @@
 // JavaScript | this keyword | 3.31.31
-console.log(this);
+console.clear();
 
-// Constructor Functions
-// The constructor method is a special method of a class for creating and initializing an object instance of that class.
-function Cycle(color, price, model, brand) {
+// Constructor - Prototypal inheritance
+
+function Apple(color, weight) {
     this.color = color;
-    this.price = price;
-    this.model = model;
-    this.brand = brand;
+    this.weight = weight;
 }
-let cycle_01 = new Cycle('Red', 5000, 'M_01', 'Hero');
-let cycle_02 = new Cycle('Blue', 10000, 'M_02', 'Atlas');
-let cycle_03 = new Cycle('Red', 15000, 'M_01', 'Montra');
-let cycle_04 = new Cycle('Red', 20000, 'M_01', 'Hercules');
-let cycle_05 = new Cycle('Red', 25000, 'M_01', 'Firefox');
+Apple.prototype = {
+    eat: () => 'Eat the Apple',
+    throw: () => 'Throw the Apple',
+}
+Apple.prototype.eat = () => 'Not eat the Apple'
+let apple_01 = new Apple('Red', 33);
+let apple_02 = new Apple('Green', 66);
+let apple_03 = new Apple('Yellow', 99);
 
-console.log(cycle_01);
-console.log(cycle_02);
-console.log(cycle_03);
-console.log(cycle_04);
-console.log(cycle_05);
+console.log(apple_01.eat());
