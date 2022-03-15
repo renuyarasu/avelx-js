@@ -4,9 +4,11 @@ console.clear();
 // If Statements
 let carsleft = 0;
 let carsright = 0;
-let greenMan = 'yes';
-if (greenMan === 'no') {
+let greenMan = 'no';
+if (greenMan === 'yes') {
     console.log('Cross The Road!');
+} else if (carsleft === 0) {
+    console.log('All clear, Cross the road!');
 } else {
-    console.log('No!!!');
+    console.log('Stay there!');
 }
