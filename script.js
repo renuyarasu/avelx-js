@@ -1,18 +1,12 @@
 // JavaScript | this keyword | 3.31.31
 console.clear();
 
-// For and for in loop
-
-let class_register = ['VedaGna', 'Hindu', 'Renu'];
-
-for (let index in class_register) {
-    console.log(class_register[index]);
+// Var, Const & Let ES6
+if (true) {
+    var varName = 'Value reference in memory!';
+    let letName = 'Scoped value!';
+    const constName = 'Constant value in memory!';
 }
-/* for (let i = 0; i < class_register.length; i++) {
-    console.log(class_register[i]);
-}
- */
-/* console.log(class_register[0]); //VedaGna
-console.log(class_register[1]); //Hindu
-console.log(class_register[2]);// Renu
- */
+console.log(varName); // Value reference in memory!
+console.log(letName); // letName is not defined
+console.log(constName); // constName is not defined
