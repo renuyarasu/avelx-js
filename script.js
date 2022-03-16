@@ -2,7 +2,7 @@
 console.clear();
 
 // Var, Const & Let ES6
-if (true) {
+for (let i = 0; i < 5; i++) {
     var varName = 'Value reference in memory!';
     let letName = 'Scoped value!';
     const constName = 'Constant value in memory!';
