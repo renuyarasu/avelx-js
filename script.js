@@ -4,6 +4,6 @@ console.clear();
 // Understanding the Document Object Model (DOM)
 // Targeting DOM Elements
 
-let element = document.getElementsByClassName('content');
+let element = document.querySelectorAll('#content, .content');
 
 console.log(element);
