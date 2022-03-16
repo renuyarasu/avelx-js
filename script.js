@@ -1,17 +1,10 @@
 // JavaScript | this keyword | 3.31.31
 console.clear();
 
-// Event Handlers
+// Create & Append, InsertBefore & InsertAfter
 
-var select = document.getElementsByName('cars')[0];
+let element = document.createElement('div');
+element.style.cssText = 'width:200px;height:50px;background:green';
+element.onclick = ()=> alert('INDIA');
 
-select.onclick = function (event) {
-    console.log(event);
-}
-
-function ClickCallback(event) {
-    console.log('Click by the  ClickCallback');
-}
-
-select.addEventListener('click', ClickCallback);
-select.removeEventListener('click', ClickCallback)
+document.body.appendChild(element)
