@@ -4,6 +4,6 @@ console.clear();
 // Understanding the Document Object Model (DOM)
 // Targeting DOM Elements
 
-let element = document.getElementsByTagName('p');
+let element = document.getElementById('content');
 
 console.log(element);
